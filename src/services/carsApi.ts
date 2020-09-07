@@ -22,11 +22,10 @@ const getCarInfo = (vin: string) => {
   return axios.get(reqUrl);
 };
 
-export {
-  checkStatus, getCarInfo, getDates2, getDates6,
-};
+const getAllData = (vin: string) => Promise.all([checkStatus(vin),
+  getCarInfo(vin), getDates2(vin), getDates6(vin)])
+  .then((res) => Promise.resolve(res.map((item) => item.data.data[0].attributes)));
 
-//     status/X7LASRA3C66196043
-// https://rdwapp.renault.ru/api/v1/dates2/X7LASRA3C66196043
-//     https://rdwapp.renault.ru/api/v1/dates6/X7LASRA3C66196043
-//         https://rdwapp.renault.ru/api/v1/info/X7LASRA3C66196043
+export {
+  checkStatus, getCarInfo, getDates2, getDates6, getAllData,
+};

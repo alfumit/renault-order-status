@@ -3,19 +3,21 @@ import './App.css';
 import Grid from '@material-ui/core/Grid';
 import CarCard from './components/CarCard/CarCard';
 import VinInput from './components/VinInput/VinInput';
-import VinContext from './contexts/vinContenxt';
+import CarContext from './contexts/CarContenxt';
 
 function App() {
-  const [vin, setVin] = useState('X7LASRA3C66196043');
-  const vinContextValue = { vin, setVin };
+  const [carData, setCarData] = useState({});
+  const carContextValue = { carData, setCarData };
 
   return (
-    <VinContext.Provider value={vinContextValue as any}>
-      <Grid container className="App" alignContent="center">
+    <CarContext.Provider value={carContextValue as any}>
+      <Grid container className="App" alignContent="center" justify="center">
         <VinInput />
+      </Grid>
+      <Grid container justify="center" alignContent="center">
         <CarCard />
       </Grid>
-    </VinContext.Provider>
+    </CarContext.Provider>
   );
 }
 
