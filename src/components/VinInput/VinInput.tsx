@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 });
 
 const VinInput: React.FC = () => {
-  const [vin, setVin] = useState('X7LASRA3C66196043');
+  const [vin, setVin] = useState('');
   const { carData, setCarData, setLoading } = useContext(CarContext);
   const classes = useStyles();
 

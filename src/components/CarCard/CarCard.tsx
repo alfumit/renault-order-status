@@ -39,7 +39,7 @@ export default function CarCard() {
       {!loading && carData.length && (
       <CardContent>
         <Grid container>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Typography className={classes.root} align="left" color="textPrimary" gutterBottom>
               Order information
             </Typography>
@@ -71,7 +71,7 @@ export default function CarCard() {
               { new Date(carData[2].plandt).toTimeString() }
             </Typography>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <CarImage carColor={carData[1].color} />
           </Grid>
         </Grid>
@@ -83,9 +83,11 @@ export default function CarCard() {
       </CardContent>
       )}
       {!loading && !carData.length && <h1>No car data</h1>}
+      {!loading && carData.length && (
       <CardActions>
         <Button size="small" style={{ margin: '0 auto' }} variant="outlined">Subscribe to telegram bot</Button>
       </CardActions>
+      )}
     </Card>
   );
 }
