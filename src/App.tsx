@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import CarCard from './components/CarCard/CarCard';
 import VinInput from './components/VinInput/VinInput';
 import CarContext from './contexts/CarContext';
+import Footer from './components/Footer/Footer';
 
 const useStyles = makeStyles({
   vinHeader: {
@@ -16,8 +17,9 @@ const useStyles = makeStyles({
 function App() {
   const [carData, setCarData] = useState({});
   const [loading, setLoading] = useState(false);
+  const [useMock, setUseMock] = useState(false);
   const carContextValue = {
-    loading, carData, setCarData, setLoading,
+    loading, carData, useMock, setCarData, setLoading, setUseMock,
   };
   const classes = useStyles();
 
@@ -31,6 +33,7 @@ function App() {
           <CarCard />
         </Grid>
       </div>
+      <Footer />
     </CarContext.Provider>
   );
 }

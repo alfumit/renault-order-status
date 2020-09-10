@@ -1,3 +1,10 @@
+# Unofficial Renault Order Status Demo
+
+This project is designed to demonstrate how Renault open order API can be used to create
+ a convenient tool for order tracking, enabling customers to see the progress of their car production
+
+=============================================================
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

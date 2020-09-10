@@ -1,4 +1,5 @@
 import axios from 'axios';
+import redWhite from '../mocks/red-white-car';
 
 const apiHost = 'https://rdwapp.renault.ru/api/v1';
 
@@ -22,9 +23,13 @@ const getCarInfo = (vin: string) => {
   return axios.get(reqUrl);
 };
 
-const getAllData = (vin: string) => Promise.all([checkStatus(vin),
-  getCarInfo(vin), getDates2(vin), getDates6(vin)])
-  .then((res) => Promise.resolve(res.map((item) => item.data.data[0].attributes)));
+const getAllData = (vin: string, useMock?: boolean) => {
+  if (useMock) return Promise.resolve(redWhite);
+
+  return Promise.all([checkStatus(vin),
+    getCarInfo(vin), getDates2(vin), getDates6(vin)])
+    .then((res) => Promise.resolve(res.map((item) => item.data.data[0].attributes)));
+};
 
 export {
   checkStatus, getCarInfo, getDates2, getDates6, getAllData,

@@ -29,7 +29,7 @@ const CarStatus = (props: any) => {
       <Typography variant="h4" gutterBottom>Detailed status of your order:</Typography>
       <Grid container className={classes.stepsContainer} justify="center">
         {steps.map((item, index) => (
-          <Grid item xs={12} md={4} key={item} className={index < status ? classes.passed : ''}>
+          <Grid item xs={12} sm={6} md={4} key={item} className={index < status ? classes.passed : ''}>
             <div className={classes.step}>
               {index < status && <Icon>check_circle_outline</Icon>}
               {index >= status && <Icon>highlight_off</Icon>}
