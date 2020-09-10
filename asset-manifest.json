@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/renault-order-status/static/css/main.99c7f121.chunk.css",
-    "main.js": "/renault-order-status/static/js/main.695ca308.chunk.js",
-    "main.js.map": "/renault-order-status/static/js/main.695ca308.chunk.js.map",
+    "main.css": "/renault-order-status/static/css/main.cc5f1471.chunk.css",
+    "main.js": "/renault-order-status/static/js/main.10d7376c.chunk.js",
+    "main.js.map": "/renault-order-status/static/js/main.10d7376c.chunk.js.map",
     "runtime-main.js": "/renault-order-status/static/js/runtime-main.7ea89470.js",
     "runtime-main.js.map": "/renault-order-status/static/js/runtime-main.7ea89470.js.map",
-    "static/js/2.3f2166db.chunk.js": "/renault-order-status/static/js/2.3f2166db.chunk.js",
-    "static/js/2.3f2166db.chunk.js.map": "/renault-order-status/static/js/2.3f2166db.chunk.js.map",
+    "static/js/2.7e9be9aa.chunk.js": "/renault-order-status/static/js/2.7e9be9aa.chunk.js",
+    "static/js/2.7e9be9aa.chunk.js.map": "/renault-order-status/static/js/2.7e9be9aa.chunk.js.map",
     "index.html": "/renault-order-status/index.html",
-    "precache-manifest.789fc9f487554ecad8b8b62a6843997a.js": "/renault-order-status/precache-manifest.789fc9f487554ecad8b8b62a6843997a.js",
+    "precache-manifest.21229c6b4e4f80c0f4bb808acf8027e7.js": "/renault-order-status/precache-manifest.21229c6b4e4f80c0f4bb808acf8027e7.js",
     "service-worker.js": "/renault-order-status/service-worker.js",
-    "static/css/main.99c7f121.chunk.css.map": "/renault-order-status/static/css/main.99c7f121.chunk.css.map",
-    "static/js/2.3f2166db.chunk.js.LICENSE.txt": "/renault-order-status/static/js/2.3f2166db.chunk.js.LICENSE.txt",
+    "static/css/main.cc5f1471.chunk.css.map": "/renault-order-status/static/css/main.cc5f1471.chunk.css.map",
+    "static/js/2.7e9be9aa.chunk.js.LICENSE.txt": "/renault-order-status/static/js/2.7e9be9aa.chunk.js.LICENSE.txt",
     "static/media/D17.png": "/renault-order-status/static/media/D17.c393476d.png",
     "static/media/D69.png": "/renault-order-status/static/media/D69.da680879.png",
     "static/media/KAD.png": "/renault-order-status/static/media/KAD.64992532.png",
@@ -32,12 +32,13 @@
     "static/media/YQZ.png": "/renault-order-status/static/media/YQZ.8314be94.png",
     "static/media/YRA.png": "/renault-order-status/static/media/YRA.ca8584ce.png",
     "static/media/YRB.png": "/renault-order-status/static/media/YRB.203f1210.png",
-    "static/media/YRC.png": "/renault-order-status/static/media/YRC.0a26def1.png"
+    "static/media/YRC.png": "/renault-order-status/static/media/YRC.0a26def1.png",
+    "static/media/unknown.png": "/renault-order-status/static/media/unknown.49d99b9f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7ea89470.js",
-    "static/js/2.3f2166db.chunk.js",
-    "static/css/main.99c7f121.chunk.css",
-    "static/js/main.695ca308.chunk.js"
+    "static/js/2.7e9be9aa.chunk.js",
+    "static/css/main.cc5f1471.chunk.css",
+    "static/js/main.10d7376c.chunk.js"
   ]
 }
