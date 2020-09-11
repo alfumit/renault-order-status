@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/renault-order-status/static/css/main.cc5f1471.chunk.css",
-    "main.js": "/renault-order-status/static/js/main.10d7376c.chunk.js",
-    "main.js.map": "/renault-order-status/static/js/main.10d7376c.chunk.js.map",
+    "main.js": "/renault-order-status/static/js/main.5f802534.chunk.js",
+    "main.js.map": "/renault-order-status/static/js/main.5f802534.chunk.js.map",
     "runtime-main.js": "/renault-order-status/static/js/runtime-main.7ea89470.js",
     "runtime-main.js.map": "/renault-order-status/static/js/runtime-main.7ea89470.js.map",
     "static/js/2.7e9be9aa.chunk.js": "/renault-order-status/static/js/2.7e9be9aa.chunk.js",
     "static/js/2.7e9be9aa.chunk.js.map": "/renault-order-status/static/js/2.7e9be9aa.chunk.js.map",
     "index.html": "/renault-order-status/index.html",
-    "precache-manifest.21229c6b4e4f80c0f4bb808acf8027e7.js": "/renault-order-status/precache-manifest.21229c6b4e4f80c0f4bb808acf8027e7.js",
+    "precache-manifest.b30b076c9e310a3c3aad484a33de2788.js": "/renault-order-status/precache-manifest.b30b076c9e310a3c3aad484a33de2788.js",
     "service-worker.js": "/renault-order-status/service-worker.js",
     "static/css/main.cc5f1471.chunk.css.map": "/renault-order-status/static/css/main.cc5f1471.chunk.css.map",
     "static/js/2.7e9be9aa.chunk.js.LICENSE.txt": "/renault-order-status/static/js/2.7e9be9aa.chunk.js.LICENSE.txt",
@@ -39,6 +39,6 @@
     "static/js/runtime-main.7ea89470.js",
     "static/js/2.7e9be9aa.chunk.js",
     "static/css/main.cc5f1471.chunk.css",
-    "static/js/main.10d7376c.chunk.js"
+    "static/js/main.5f802534.chunk.js"
   ]
 }
