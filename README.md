@@ -1,7 +1,10 @@
-# Unofficial Renault Order Status Demo
+# Unofficial Order Status Demo
 
-This project is designed to demonstrate how Renault open order API can be used to create
- a convenient tool for order tracking, enabling customers to see the progress of their car production
+Данный проект создан с целью обратить внимание на необходимость правильной конфигурации CORS-политики для API,
+передающих потенциально опасную информацию.
+
+This project is designed to demonstrate how open API can be used to create a tool for using sensitive information and
+the need for proper CORS configuration
 
 =============================================================
 
