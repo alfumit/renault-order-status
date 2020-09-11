@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4107633f2c2590c3cc40377a8e567fe1",
+    "revision": "933a72408e3e8c8deb80417ba0b5a78a",
     "url": "/renault-order-status/index.html"
   },
   {
-    "revision": "0100312ca8aedf8d33a1",
+    "revision": "94a468fe6c052f3bd627",
     "url": "/renault-order-status/static/css/main.cc5f1471.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/renault-order-status/static/js/2.7e9be9aa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0100312ca8aedf8d33a1",
-    "url": "/renault-order-status/static/js/main.5f802534.chunk.js"
+    "revision": "94a468fe6c052f3bd627",
+    "url": "/renault-order-status/static/js/main.3127c6a4.chunk.js"
   },
   {
     "revision": "4a7199fc04147d301d3e",
