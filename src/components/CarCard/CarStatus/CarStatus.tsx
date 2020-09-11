@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-const CarStatus = (props: any) => {
+const CarStatus = () => {
   const { carData } = useContext(CarContext);
   const classes = useStyles();
   const { status } = carData[0];

@@ -30,12 +30,12 @@ const VinInput: React.FC = () => {
   const [vin, setVin] = useState('');
   const [requestError, setRequestError] = useState(false);
   const {
-    carData, setCarData, setLoading, useMock, setUseMock,
+    setCarData, setLoading, useMock, setUseMock,
   } = useContext(CarContext);
   const classes = useStyles();
 
   const vinHandler = (vinFieldValue: string) => {
-    setVin(vinFieldValue);
+    setVin(vinFieldValue.trim());
   };
 
   const getCarInfo = () => {
@@ -48,14 +48,12 @@ const VinInput: React.FC = () => {
           setCarData(res);
           setRequestError(false);
         })
-        .catch((err) => {
-          console.log('Unable to fetch data', err.message);
+        .catch(() => {
           setRequestError(true);
         })
         .finally(() => setLoading(false));
     } else {
       setRequestError(true);
-      console.log('Please enter something');
     }
   };
 

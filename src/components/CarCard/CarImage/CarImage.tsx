@@ -65,7 +65,7 @@ const CarImage = (props: any) => {
 
   return (
     <figure>
-      <img className={classes.carImage} src={images[carColor.toLowerCase()] || unknown} alt="You car image" />
+      <img className={classes.carImage} src={images[carColor.toLowerCase()] || unknown} alt="You car" />
     </figure>
   );
 };

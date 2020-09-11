@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <Grid container justify="center" alignItems="center" className={classes.root}>
-      <Typography variant="caption">This is not an official service. User at your own risk. </Typography>
+      <Typography variant="caption">This is not an official service. Use at your own risk. </Typography>
       <Typography variant="caption">
         <Link href="https://github.com/alfumit/renault-order-status">
           Github Repository
