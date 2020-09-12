@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/renault-order-status/precache-manifest.74b5f61da3bdb58f7765cfdf0e5e7f62.js"
+  "/renault-order-status/precache-manifest.90d9cac3be86ead1fde75618462510db.js"
 );
 
 self.addEventListener('message', (event) => {
