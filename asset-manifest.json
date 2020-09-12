@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/renault-order-status/static/css/main.cc5f1471.chunk.css",
-    "main.js": "/renault-order-status/static/js/main.3127c6a4.chunk.js",
-    "main.js.map": "/renault-order-status/static/js/main.3127c6a4.chunk.js.map",
+    "main.js": "/renault-order-status/static/js/main.6085f1e6.chunk.js",
+    "main.js.map": "/renault-order-status/static/js/main.6085f1e6.chunk.js.map",
     "runtime-main.js": "/renault-order-status/static/js/runtime-main.7ea89470.js",
     "runtime-main.js.map": "/renault-order-status/static/js/runtime-main.7ea89470.js.map",
-    "static/js/2.7e9be9aa.chunk.js": "/renault-order-status/static/js/2.7e9be9aa.chunk.js",
-    "static/js/2.7e9be9aa.chunk.js.map": "/renault-order-status/static/js/2.7e9be9aa.chunk.js.map",
+    "static/js/2.bb8abca5.chunk.js": "/renault-order-status/static/js/2.bb8abca5.chunk.js",
+    "static/js/2.bb8abca5.chunk.js.map": "/renault-order-status/static/js/2.bb8abca5.chunk.js.map",
     "index.html": "/renault-order-status/index.html",
-    "precache-manifest.d49434503b1b03901fb6d6d964326105.js": "/renault-order-status/precache-manifest.d49434503b1b03901fb6d6d964326105.js",
+    "precache-manifest.74b5f61da3bdb58f7765cfdf0e5e7f62.js": "/renault-order-status/precache-manifest.74b5f61da3bdb58f7765cfdf0e5e7f62.js",
     "service-worker.js": "/renault-order-status/service-worker.js",
     "static/css/main.cc5f1471.chunk.css.map": "/renault-order-status/static/css/main.cc5f1471.chunk.css.map",
-    "static/js/2.7e9be9aa.chunk.js.LICENSE.txt": "/renault-order-status/static/js/2.7e9be9aa.chunk.js.LICENSE.txt",
+    "static/js/2.bb8abca5.chunk.js.LICENSE.txt": "/renault-order-status/static/js/2.bb8abca5.chunk.js.LICENSE.txt",
     "static/media/D17.png": "/renault-order-status/static/media/D17.c393476d.png",
     "static/media/D69.png": "/renault-order-status/static/media/D69.da680879.png",
     "static/media/KAD.png": "/renault-order-status/static/media/KAD.64992532.png",
@@ -37,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7ea89470.js",
-    "static/js/2.7e9be9aa.chunk.js",
+    "static/js/2.bb8abca5.chunk.js",
     "static/css/main.cc5f1471.chunk.css",
-    "static/js/main.3127c6a4.chunk.js"
+    "static/js/main.6085f1e6.chunk.js"
   ]
 }
