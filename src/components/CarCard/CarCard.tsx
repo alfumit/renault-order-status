@@ -10,6 +10,7 @@ import { CircularProgress, Grid } from '@material-ui/core';
 import CarImage from './CarImage/CarImage';
 import CarContext from '../../contexts/CarContext';
 import CarStatus from './CarStatus/CarStatus';
+import MessageContext from '../../contexts/MessageContext';
 
 const useStyles = makeStyles({
   root: {
@@ -31,7 +32,12 @@ const useStyles = makeStyles({
 export default function CarCard() {
   const classes = useStyles();
   const { carData, loading } = useContext(CarContext);
-  console.log('carData', carData);
+  const { setOpen, setMessage } = useContext(MessageContext);
+
+  const telegramBotSubscribe = () => {
+    setOpen(true);
+    setMessage('Telegram bot is not available yet');
+  };
 
   return (
     <Card className={classes.root} variant="outlined">
@@ -85,7 +91,9 @@ export default function CarCard() {
       {!loading && !carData.length && <h1>No car data</h1>}
       {!loading && carData.length && (
       <CardActions>
-        <Button size="small" style={{ margin: '0 auto' }} variant="outlined">Subscribe to telegram bot</Button>
+        <Button size="small" style={{ margin: '0 auto' }} variant="outlined" onClick={telegramBotSubscribe}>
+          Subscribe to telegram bot
+        </Button>
       </CardActions>
       )}
     </Card>

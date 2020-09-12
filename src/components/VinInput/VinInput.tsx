@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import CarContext from '../../contexts/CarContext';
 import { getAllData } from '../../services/carsApi';
+import MessageContext from '../../contexts/MessageContext';
 
 const useStyles = makeStyles((theme: Theme) => ({
   header: {
@@ -29,9 +30,12 @@ const useStyles = makeStyles((theme: Theme) => ({
 const VinInput: React.FC = () => {
   const [vin, setVin] = useState('');
   const [requestError, setRequestError] = useState(false);
+
   const {
     setCarData, setLoading, useMock, setUseMock,
   } = useContext(CarContext);
+  const { setOpen, setMessage } = useContext(MessageContext);
+
   const classes = useStyles();
 
   const vinHandler = (vinFieldValue: string) => {
@@ -50,6 +54,8 @@ const VinInput: React.FC = () => {
         })
         .catch(() => {
           setRequestError(true);
+          setOpen(true);
+          setMessage('Please, check your VIN. Request error occurred');
         })
         .finally(() => setLoading(false));
     } else {
@@ -57,7 +63,16 @@ const VinInput: React.FC = () => {
     }
   };
 
-  const toggleMockData = () => setUseMock(!useMock);
+  const toggleMockData = () => {
+    setUseMock(!useMock);
+    setOpen(true);
+
+    if (useMock) {
+      setMessage('Real API data will be used');
+    } else {
+      setMessage('Mock data shall be used instead of the real API');
+    }
+  };
 
   return (
     <div className={classes.root}>
