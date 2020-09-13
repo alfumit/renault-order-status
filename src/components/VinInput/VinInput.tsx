@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {
   Button, ButtonGroup, Grid, TextField, Typography, Theme,
 } from '@material-ui/core';
@@ -27,8 +27,9 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-const VinInput: React.FC = () => {
-  const [vin, setVin] = useState('');
+const VinInput = (props: { vinParam?: any }) => {
+  const { vinParam } = props;
+  const [vin, setVin] = useState(vinParam || '');
   const [requestError, setRequestError] = useState(false);
 
   const {
@@ -73,6 +74,10 @@ const VinInput: React.FC = () => {
       setMessage('Mock data shall be used instead of the real API');
     }
   };
+
+  useEffect(() => {
+    if (vinParam) getCarInfo();
+  }, [vinParam]);
 
   return (
     <div className={classes.root}>
