@@ -10,6 +10,8 @@ import MessageContext from './contexts/MessageContext';
 import Footer from './components/Footer/Footer';
 import RosSnackbar from './components/RosSnackbar/RosSnackbar';
 import CarPage from './pages/CarPage';
+import RosAppBar from './components/RosAppBar/RosAppBar';
+import RosDrawer from "./components/RosDrawer/RosDrawer";
 
 function App() {
   const [carData, setCarData] = useState({});
@@ -28,6 +30,7 @@ function App() {
     <MessageContext.Provider value={messageContextValue}>
       <CarContext.Provider value={carContextValue as any}>
         <Router>
+          <RosAppBar />
           <Switch>
             <Route path="/">
               <CarPage />
@@ -35,6 +38,7 @@ function App() {
           </Switch>
           <Footer />
           <RosSnackbar />
+          <RosDrawer />
         </Router>
       </CarContext.Provider>
     </MessageContext.Provider>
